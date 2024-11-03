@@ -1,0 +1,108 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@android:color/white">
+
+    <ImageButton
+        android:id="@+id/btnCheckBrush"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:contentDescription="CheckBrush"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@drawable/button_selector"
+        android:src="@drawable/check"
+        android:layout_gravity="end"
+        tools:ignore="HardcodedText" />
+    <!-- SeekBar cho kích thước nét vẽ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kích thước nét vẽ"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_medium"
+        tools:ignore="HardcodedText" />
+    <SeekBar
+        android:id="@+id/seekBarBrushSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50" />
+
+    <!-- Chọn màu -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Màu vẽ"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_medium"
+        tools:ignore="HardcodedText" />
+    <include
+        layout="@layout/colors_layout"
+        />
+
+    <!-- Chọn hình dạng -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hình dạng vẽ"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_medium"
+        tools:ignore="HardcodedText" />
+    <RadioGroup
+        android:id="@+id/radioGroupShape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioFree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginEnd="10dp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginEnd="10dp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioOval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oval"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginEnd="10dp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioRectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rectangle"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginEnd="10dp"
+            tools:ignore="HardcodedText" />
+    </RadioGroup>
+</LinearLayout>

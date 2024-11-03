@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/editTextLayout"
+    android:paddingTop="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@android:color/white">
+    <ImageButton
+        android:id="@+id/btnConfirmText"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:contentDescription="CheckBrush"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@drawable/button_selector"
+        android:src="@drawable/check"
+        android:layout_gravity="end" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập văn bản"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn màu"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_medium"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kích thước chữ"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <SeekBar
+        android:id="@+id/textSizeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

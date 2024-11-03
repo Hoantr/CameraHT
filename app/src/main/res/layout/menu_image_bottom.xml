@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuImageLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/buttonBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/btnShare"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Chia sẻ"
+        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@drawable/button_selector"
+        android:drawableTop="@drawable/ios_share_24"
+        android:layout_marginStart="5dp"
+        tools:ignore="HardcodedText,SmallSp" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/edit_square_24"
+        android:text="Chỉnh sửa"
+        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@drawable/button_selector"
+        android:layout_marginStart="8dp"
+        tools:ignore="HardcodedText,SmallSp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/outline_delete_24"
+        android:text="Xóa"
+        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@drawable/button_selector"
+        android:layout_marginStart="8dp"
+        tools:ignore="HardcodedText,SmallSp" />
+
+    <Button
+        android:id="@+id/btnInfo"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/info_24"
+        android:textAllCaps="false"
+        android:text="Thông tin"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:background="@drawable/button_selector"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="5dp"
+        tools:ignore="HardcodedText,SmallSp" />
+
+</LinearLayout>
